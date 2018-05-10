@@ -13,3 +13,15 @@ body {
 	width: 200px;
 	height: 75px;
 }
+
+.error {
+	border-color: red !important;
+}
+.error_span {
+	color: red;
+}
+
+.btn-success {
+	background-color: #f02f80 !important;
+    border-color: #f02f80 !important;
+}

@@ -1,0 +1,13 @@
+{
+    "name": "a/a",
+    "description": "sdf",
+    "authors": [
+        {
+            "name": "nikolas9702",
+            "email": "dilan.gonzalez.garcia@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.0"
+    }
+}

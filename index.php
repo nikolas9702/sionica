@@ -15,32 +15,45 @@
 </head>
 <body>
 	<div class="container-fluid">
+		<div class=" container-fluid">
+			<div class="col-lg-12" style="height: 66px"></div>
+		</div>
 		<div class=" jumbotron offset-lg-8 col-xs-10 offset-md-4 col-md-8 col-lg-4 ">
-			<img src="img/logo.png" class="logo">
+			<center>
+			<img src="img/logo.png" class=" text-center img-fluid">
+			</center>
+			<div id="mensajeRepuesta">
+			</div>
 			<form id="formContactenos" method="POST">
+				<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
 			  <div class="form-group">
 			    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido">
+			    <span name='error_name'></span>
 			  </div>
 			  <div class="form-group">
 			    <input type="text" class="form-control" id="correo" name="correo" placeholder="Email">
+			    <span name='error_correo'></span>
 			  </div>
 			  <div class="form-group">
 			    <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+			    <span name='error_telefono'></span>
 			  </div>
 			  <div class="form-group">
 			    <select class="form-control" id="ciudad" name="ciudad">
-			    	<option>Ciudad</option>
-			    	<option value="bogota">Bogotá</option>
+			    	<option value="">Ciudad</option>
+			    	<option value="1">Bogotá</option>
 			    </select>
+			    <span name='error_ciudad'></span>
 			  </div>
 			  <div class="form-group">
 			    <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+			    <span name='error_mensaje'></span>
 			  </div>
-			  <button name="contactenos" id="contactenos" class="btn btn-success btn-block">Contácteme</button>
+			  <button name="contactenos" id="contactenos" class="btn btn-success btn-block btn-lg">Contácteme</button>
 			</form>
 		</div>
 		<div class="offset-lg-8 col-xs-10 offset-md-4 col-md-8 col-lg-4 " style="color: #fff">
-			Tus datos estan seguros con nosotros Ley 1581 de 2012
+			<b>Tus datos estan seguros con nosotros Ley 1581 de 2012</b>
 		</div>
 	</div>
 </body>
